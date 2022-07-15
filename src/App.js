@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="container">
-      <h1 className="one">hello world</h1>
+      <h1 className="one w-10 h-10 mx-auto">hello world</h1>
       <h1 className="two">hello world</h1>
       <h1 className="three">hello world</h1>
 

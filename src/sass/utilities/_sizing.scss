@@ -1,28 +1,20 @@
-/* --------------------- */
-/* Sizing */
-/* ---------------------*/
-.w-full {
-  width: 100%;
-}
-.w-screen {
-  width: 100vw;
-}
-.w-0 {
-  width: 0;
+@use "../abstracts/sizing" as *;
+
+/* width --------------------width*/
+@each $name, $value in $width {
+  .#{$name} {
+    width: #{$value};
+  }
 }
 
-.h-full {
-  height: 100%;
-}
-.h-screen {
-  height: 100vh;
+/* height ------------------height*/
+@each $name, $value in $height {
+  .#{$name} {
+    height: #{$value};
+  }
 }
 .min-h-screen {
   min-height: 100vh;
-}
-
-.h-0 {
-  height: 0;
 }
 
 /* --------------------- */

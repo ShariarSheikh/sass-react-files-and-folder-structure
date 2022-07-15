@@ -1,0 +1,128 @@
+@use "../abstracts/index" as *;
+
+/* --------------------- */
+/* Spacing */
+/* ---------------------*/
+
+/* padding ----------------------------------padding*/
+@each $paddingType, $shades in $padding {
+  @if $paddingType == padding {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding: #{$value};
+      }
+    }
+  }
+
+  @if $paddingType == paddingTop {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding-top: #{$value};
+      }
+    }
+  }
+
+  @if $paddingType == paddingBottom {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding-bottom: #{$value};
+      }
+    }
+  }
+
+  @if $paddingType == paddingLeft {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding-left: #{$value};
+      }
+    }
+  }
+
+  @if $paddingType == paddingRight {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding-right: #{$value};
+      }
+    }
+  }
+
+  @if $paddingType == paddingX {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding-left: #{$value};
+        padding-right: #{$value};
+      }
+    }
+  }
+
+  @if $paddingType == paddingY {
+    @each $padding, $value in $shades {
+      .#{$padding} {
+        padding-top: #{$value};
+        padding-bottom: #{$value};
+      }
+    }
+  }
+}
+
+/* margin ----------------------------------margin*/
+
+@each $marginType, $shades in $margin {
+  @if $marginType == margin {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin: #{$value};
+      }
+    }
+  }
+
+  @if $marginType == marginTop {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin-top: #{$value};
+      }
+    }
+  }
+
+  @if $marginType == marginBottom {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin-bottom: #{$value};
+      }
+    }
+  }
+
+  @if $marginType == marginLeft {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin-left: #{$value};
+      }
+    }
+  }
+
+  @if $marginType == marginRight {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin-right: #{$value};
+      }
+    }
+  }
+
+  @if $marginType == marginX {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin-left: #{$value};
+        margin-right: #{$value};
+      }
+    }
+  }
+
+  @if $marginType == marginY {
+    @each $margin, $value in $shades {
+      .#{$margin} {
+        margin-top: #{$value};
+        margin-bottom: #{$value};
+      }
+    }
+  }
+}
