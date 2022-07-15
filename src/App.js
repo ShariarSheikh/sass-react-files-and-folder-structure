@@ -7,11 +7,11 @@ function App() {
 
       <iframe
         className="aspect-video w-full"
-        src="https://www.youtube.com/embed/jfMHA8SqUL4"
+        src="https://www.youtube.com/embed/lRaL-8qZ0mM"
         title="YouTube video player"
-        frameBorder="0"
+        frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowFullScreen
+        allowfullscreen
       ></iframe>
     </div>
   );
