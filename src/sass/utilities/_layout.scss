@@ -1,0 +1,136 @@
+@use "../abstracts/index" as *;
+
+/* --------------------- */
+/* Container */
+/* ---------------------*/
+.container {
+  padding: 0.5rem;
+  @each $key, $value in $breakpoints {
+    @if $key == sm {
+      @include mq(sm) {
+        padding: 1rem;
+        max-width: 40rem;
+      }
+    } @else if $key == md {
+      @include mq(md) {
+        padding: 1.5rem;
+        max-width: 48em;
+      }
+    } @else if $key == lg {
+      @include mq(lg) {
+        padding: 1.5rem;
+        max-width: 64em;
+      }
+    } @else if $key == xl {
+      @include mq(xl) {
+        padding: 1.5rem;
+        max-width: 80em;
+      }
+    } @else if $key == 1xl {
+      @include mq(1xl) {
+        padding: 1.5rem;
+        //1320px
+        max-width: 82.5em;
+      }
+    }
+  }
+
+  margin: 0 auto;
+}
+
+/* --------------------- */
+/* Display */
+/* ---------------------*/
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+/* --------------------- */
+/* Object Fit */
+/* ---------------------*/
+.object-cover {
+  object-fit: cover;
+}
+.object-contain {
+  object-fit: contain;
+}
+.object-fill {
+  object-fit: fill;
+}
+.object-none {
+  object-fit: none;
+}
+
+/* --------------------- */
+/* Overflow */
+/* --------------------- */
+.overflow-y-auto {
+  overflow-y: auto;
+}
+.overflow-x-auto {
+  overflow-x: auto;
+}
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+/* --------------------- */
+/* Position */
+/* --------------------- */
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+
+/* --------------------- */
+/* Aspect Ratio */
+/* ---------------------*/
+.aspect-auto {
+  aspect-ratio: auto;
+}
+.aspect-square {
+  aspect-ratio: 1/1;
+}
+.aspect-video {
+  aspect-ratio: 16/9;
+}

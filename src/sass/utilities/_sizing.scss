@@ -16,16 +16,3 @@
 .min-h-screen {
   min-height: 100vh;
 }
-
-/* --------------------- */
-/* Aspect Ratio */
-/* ---------------------*/
-.aspect-auto {
-  aspect-ratio: auto;
-}
-.aspect-square {
-  aspect-ratio: 1/1;
-}
-.aspect-video {
-  aspect-ratio: 16/9;
-}

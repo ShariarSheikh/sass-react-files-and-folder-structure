@@ -5,6 +5,28 @@ function App() {
       <h1 className="two">hello world</h1>
       <h1 className="three">hello world</h1>
 
+      <div class="columns-3 mb-10">
+        <img
+          class="w-full aspect-square"
+          src="https://images.pexels.com/photos/12406354/pexels-photo-12406354.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+        />
+        <img
+          class="w-full aspect-square"
+          src="https://images.pexels.com/photos/12684656/pexels-photo-12684656.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+        />
+        <img
+          class="w-full aspect-square"
+          src="https://images.pexels.com/photos/12616272/pexels-photo-12616272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+        <img
+          class="w-full aspect-square"
+          src="https://images.pexels.com/photos/12684656/pexels-photo-12684656.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+        />
+        <img
+          class="w-full aspect-square"
+          src="https://images.pexels.com/photos/12616272/pexels-photo-12616272.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        />
+      </div>
       <iframe
         className="aspect-video w-full"
         src="https://www.youtube.com/embed/lRaL-8qZ0mM"
