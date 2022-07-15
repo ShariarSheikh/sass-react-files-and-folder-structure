@@ -1,0 +1,9 @@
+@forward "./reset";
+@forward "./root";
+@forward "./typography";
+@forward "./fontFamily";
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: hsla(0, 0%, 97%, 1);
+}

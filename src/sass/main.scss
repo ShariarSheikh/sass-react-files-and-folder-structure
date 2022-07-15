@@ -1,0 +1,14 @@
+@use "./base/index" as *;
+@use "./utilities/index" as *;
+
+.one {
+  color: var(--clr-primary-300);
+}
+
+.two {
+  color: var(--clr-primary-400);
+}
+
+.three {
+  color: var(--clr-secondary-500);
+}
